@@ -56,6 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.brand.blue};
     text-decoration: none;
     transition: all 0.2s;
+    border-bottom: 1px solid transparent;
     ${({ theme }) => theme.type.components.link}
 
     &:hover {
