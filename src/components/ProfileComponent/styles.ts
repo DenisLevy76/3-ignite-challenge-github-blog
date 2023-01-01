@@ -53,5 +53,27 @@ export const ProfileContainer = styled.article`
         }
       }
     }
+    @media (max-width: 650px) {
+      padding: 0.5rem 1rem;
+
+      flex-direction: column;
+      align-items: center;
+
+      > main > header {
+        flex-direction: column;
+        a {
+          font-size: 1.25rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    @media (max-width: 400px) {
+      > main > footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+      }
+    }
   `}
 `
