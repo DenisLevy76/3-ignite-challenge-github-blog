@@ -19,6 +19,7 @@ export const ProfileContainer = styled.article`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
     }
 
     > main > header {
