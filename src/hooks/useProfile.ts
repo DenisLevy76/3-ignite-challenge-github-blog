@@ -1,17 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { IGithubUser } from '../@types/IGithubUser'
 import { api } from '../api/api'
 
-export const useProfile = () => {
+export const useProfile = (username: string) => {
   const [profile, setProfile] = useState<IGithubUser | null>(null)
 
-  const getProfileData = async () => {
-    const { data } = await api.get<IGithubUser>('/users/DenisLevy76')
+  const getProfileData = useCallback(async () => {
+    const { data } = await api.get<IGithubUser>(`/users/${username}`)
     setProfile(data)
-  }
+  }, [username])
+
   useEffect(() => {
     getProfileData()
-  }, [])
+  }, [getProfileData])
 
   return profile
 }

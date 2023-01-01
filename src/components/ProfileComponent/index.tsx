@@ -3,13 +3,13 @@ import { ArrowSquareOut, Buildings, Users } from 'phosphor-react'
 import { useProfile } from '../../hooks/useProfile'
 
 export const ProfileComponent: React.FC = () => {
-  const profile = useProfile()
+  const profile = useProfile('DenisLevy76')
 
   return (
     <ProfileContainer>
       {profile && (
         <>
-          <img src="https://github.com/DenisLevy76.png" />
+          <img src={profile.avatar_url} />
           <main>
             <header>
               <h2>{profile.name}</h2>
