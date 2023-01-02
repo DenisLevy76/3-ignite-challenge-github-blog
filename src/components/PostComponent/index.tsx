@@ -8,7 +8,7 @@ export const PostComponent: React.FC<PostComponentProps> = ({ post }) => {
   const postCreatedAt = new Date(post.created_at)
   return (
     <PostContainer>
-      <Link to={`/post/${post.id}`}>
+      <Link to={`/post/${post.number}`}>
         <header>
           <strong>{post.title}</strong>
           <time

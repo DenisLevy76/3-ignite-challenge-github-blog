@@ -9,6 +9,7 @@ import { HomePageContainer, SearchForm } from './styles'
 
 export interface IIssue {
   id: number
+  number: number
   html_url: string
   title: string
   body: string

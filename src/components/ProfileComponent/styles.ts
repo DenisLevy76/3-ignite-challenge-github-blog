@@ -41,12 +41,13 @@ export const ProfileContainer = styled.article`
 
     > main > footer {
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
 
       > p {
         display: flex;
         gap: 0.5rem;
         align-items: center;
+        color: ${theme.colors.base.span};
 
         > svg {
           color: ${theme.colors.base.label};
