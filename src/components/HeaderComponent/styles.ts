@@ -6,7 +6,8 @@ export const HeaderContainer = styled.header`
   background-position: center;
   padding-top: 4rem;
   padding-bottom: 8.375rem;
-  width: 100vw;
+  width: 100%;
+
   > div {
     display: flex;
     align-items: center;

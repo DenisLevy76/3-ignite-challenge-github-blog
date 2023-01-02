@@ -4,7 +4,7 @@ export const ProfileContainer = styled.article`
   ${({ theme }) => css`
     display: flex;
     background: ${theme.colors.base.profile};
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 2rem 2.5rem;
     gap: 2rem;
 
